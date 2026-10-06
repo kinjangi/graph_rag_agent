@@ -1,0 +1,305 @@
+{
+  "summary": {
+    "chunksProcessed": 4,
+    "triplesExtracted": 37,
+    "averageTriplesPerChunk": 9.25
+  },
+  "triples": [
+    {
+      "subject": "ARPANET",
+      "predicate": "developed by",
+      "object": "United States Department of Defense",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "ORGANIZATION",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "ARPANET",
+      "predicate": "launched in",
+      "object": "1969",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "DATE",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "UCLA",
+      "predicate": "located in",
+      "object": "United States",
+      "subjectType": "LOCATION",
+      "objectType": "LOCATION",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Stanford Research Institute",
+      "predicate": "located in",
+      "object": "United States",
+      "subjectType": "LOCATION",
+      "objectType": "LOCATION",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Vint Cerf",
+      "predicate": "published",
+      "object": "TCP",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Bob Kahn",
+      "predicate": "published",
+      "object": "TCP",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Vint Cerf",
+      "predicate": "co-authored paper with",
+      "object": "Bob Kahn",
+      "subjectType": "PERSON",
+      "objectType": "PERSON",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "TCP",
+      "predicate": "published in",
+      "object": "1974",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "DATE",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Packet switching",
+      "predicate": "is core of",
+      "object": "Internet",
+      "subjectType": "CONCEPT",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 0
+    },
+    {
+      "subject": "Domain Name System",
+      "predicate": "introduced in",
+      "object": "1983",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "DATE",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "NSFNET",
+      "predicate": "created in",
+      "object": "1986",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "DATE",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "NSFNET",
+      "predicate": "located in",
+      "object": "United States",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "LOCATION",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Tim Berners-Lee",
+      "predicate": "worked at",
+      "object": "CERN",
+      "subjectType": "PERSON",
+      "objectType": "ORGANIZATION",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "CERN",
+      "predicate": "located in",
+      "object": "Switzerland",
+      "subjectType": "ORGANIZATION",
+      "objectType": "LOCATION",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Tim Berners-Lee",
+      "predicate": "released",
+      "object": "World Wide Web",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "World Wide Web",
+      "predicate": "released in",
+      "object": "1991",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "DATE",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Tim Berners-Lee",
+      "predicate": "invented",
+      "object": "HTML",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Tim Berners-Lee",
+      "predicate": "invented",
+      "object": "HTTP",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Tim Berners-Lee",
+      "predicate": "invented",
+      "object": "URL",
+      "subjectType": "PERSON",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Netscape Navigator",
+      "predicate": "launched in",
+      "object": "1994",
+      "subjectType": "PRODUCT",
+      "objectType": "DATE",
+      "sourceChunkId": 1
+    },
+    {
+      "subject": "Netscape Navigator",
+      "predicate": "launched in",
+      "object": "1994",
+      "subjectType": "PRODUCT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "dot-com boom",
+      "predicate": "occurred in",
+      "object": "mid-1990s",
+      "subjectType": "EVENT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "dot-com bubble",
+      "predicate": "burst in",
+      "object": "2000-2001",
+      "subjectType": "EVENT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Wikipedia",
+      "predicate": "launched in",
+      "object": "2001",
+      "subjectType": "PRODUCT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "YouTube",
+      "predicate": "founded in",
+      "object": "2005",
+      "subjectType": "PRODUCT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "iPhone",
+      "predicate": "debuted in",
+      "object": "2007",
+      "subjectType": "PRODUCT",
+      "objectType": "DATE",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Broadband connections",
+      "predicate": "replaced",
+      "object": "dial-up",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Friendster",
+      "predicate": "redefined",
+      "object": "social interaction",
+      "subjectType": "PRODUCT",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "MySpace",
+      "predicate": "redefined",
+      "object": "social interaction",
+      "subjectType": "PRODUCT",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Facebook",
+      "predicate": "redefined",
+      "object": "social interaction",
+      "subjectType": "PRODUCT",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Twitter",
+      "predicate": "distilled",
+      "object": "public discourse",
+      "subjectType": "PRODUCT",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Smartphones",
+      "predicate": "changed",
+      "object": "information consumption",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 2
+    },
+    {
+      "subject": "Cloud computing",
+      "predicate": "allows renting of",
+      "object": "computational resources",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 3
+    },
+    {
+      "subject": "Artificial intelligence",
+      "predicate": "is trained on",
+      "object": "data",
+      "subjectType": "TECHNOLOGY",
+      "objectType": "CONCEPT",
+      "sourceChunkId": 3
+    },
+    {
+      "subject": "Open standards",
+      "predicate": "are core ideas of",
+      "object": "internet",
+      "subjectType": "CONCEPT",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 3
+    },
+    {
+      "subject": "Packet switching",
+      "predicate": "are core ideas of",
+      "object": "internet",
+      "subjectType": "CONCEPT",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 3
+    },
+    {
+      "subject": "Hyperlink",
+      "predicate": "are core ideas of",
+      "object": "internet",
+      "subjectType": "CONCEPT",
+      "objectType": "TECHNOLOGY",
+      "sourceChunkId": 3
+    }
+  ]
+}

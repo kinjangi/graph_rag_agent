@@ -1,0 +1,112 @@
+/* ── Global reset & tokens ───────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color system */
+  --bg-base:        #090d16;
+  --bg-surface:     rgba(15, 23, 42, 0.7);
+  --bg-surface-hover: rgba(30, 41, 59, 0.8);
+  --bg-card:        rgba(15, 23, 42, 0.5);
+  
+  --fg-default:     #f1f5f9;
+  --fg-muted:       #94a3b8;
+  --fg-subtle:      #64748b;
+
+  --border-subtle:  rgba(255, 255, 255, 0.08);
+  --border-hover:   rgba(168, 85, 247, 0.4);
+
+  /* Accents */
+  --accent-purple:  #c084fc;
+  --accent-purple-glow: rgba(192, 132, 252, 0.25);
+  --accent-cyan:    #38bdf8;
+  --accent-cyan-glow: rgba(56, 189, 248, 0.25);
+  --accent-emerald: #34d399;
+  --accent-emerald-glow: rgba(52, 211, 153, 0.25);
+  --accent-amber:   #fbbf24;
+  --accent-amber-glow: rgba(251, 191, 36, 0.25);
+  --accent-rose:    #f87171;
+  --accent-rose-glow: rgba(248, 113, 113, 0.25);
+
+  /* Typography */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Geometry & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  
+  --shadow-glow: 0 0 25px rgba(192, 132, 252, 0.15);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --backdrop-blur: blur(16px);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--fg-default);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  /* Dynamic ambient background grid */
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(192, 132, 252, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 132, 252, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(192, 132, 252, 0.6);
+}
+
+/* ── Utility Animations ─────────────────────────────────────────────────── */
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,0 +1,941 @@
+{
+  "options": {
+    "type": "directed",
+    "multi": true,
+    "allowSelfLoops": true
+  },
+  "attributes": {},
+  "nodes": [
+    {
+      "key": "n_1791193177625_p31ql",
+      "attributes": {
+        "label": "ARPANET",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_a6pgl",
+      "attributes": {
+        "label": "United States Department of Defense",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_yle11",
+      "attributes": {
+        "label": "1969",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_nyyg8",
+      "attributes": {
+        "label": "UCLA",
+        "type": "LOCATION",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_fc8xh",
+      "attributes": {
+        "label": "United States",
+        "type": "LOCATION",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_7pgrk",
+      "attributes": {
+        "label": "Stanford Research Institute",
+        "type": "LOCATION",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_zz0ha",
+      "attributes": {
+        "label": "Vint Cerf",
+        "type": "PERSON",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_gynsy",
+      "attributes": {
+        "label": "TCP",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_flp28",
+      "attributes": {
+        "label": "Bob Kahn",
+        "type": "PERSON",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_92fvu",
+      "attributes": {
+        "label": "1974",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_sen5l",
+      "attributes": {
+        "label": "Packet switching",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_4ip8y",
+      "attributes": {
+        "label": "Internet",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_pyhp8",
+      "attributes": {
+        "label": "Domain Name System",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_ejjph",
+      "attributes": {
+        "label": "1983",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_jo7mv",
+      "attributes": {
+        "label": "NSFNET",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_rwwzy",
+      "attributes": {
+        "label": "1986",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177625_cin2b",
+      "attributes": {
+        "label": "Tim Berners-Lee",
+        "type": "PERSON",
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_xypgj",
+      "attributes": {
+        "label": "CERN",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_rphcj",
+      "attributes": {
+        "label": "Switzerland",
+        "type": "LOCATION",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_jmusz",
+      "attributes": {
+        "label": "World Wide Web",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_mu4ei",
+      "attributes": {
+        "label": "1991",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_9v8e5",
+      "attributes": {
+        "label": "HTML",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_x0xdp",
+      "attributes": {
+        "label": "HTTP",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_wbj3t",
+      "attributes": {
+        "label": "URL",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_gfbtb",
+      "attributes": {
+        "label": "Netscape Navigator",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_ji2mv",
+      "attributes": {
+        "label": "1994",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_33uyw",
+      "attributes": {
+        "label": "dot-com boom",
+        "type": "EVENT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_x053t",
+      "attributes": {
+        "label": "mid-1990s",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_fx043",
+      "attributes": {
+        "label": "2000-2001",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_mhebq",
+      "attributes": {
+        "label": "Wikipedia",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_g4dy3",
+      "attributes": {
+        "label": "2001",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_uo8uy",
+      "attributes": {
+        "label": "YouTube",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_c2y3r",
+      "attributes": {
+        "label": "2005",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_n56fb",
+      "attributes": {
+        "label": "iPhone",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_7v0x2",
+      "attributes": {
+        "label": "2007",
+        "type": "DATE",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_yl4ni",
+      "attributes": {
+        "label": "Broadband connections",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_sc33w",
+      "attributes": {
+        "label": "dial-up",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_yx51c",
+      "attributes": {
+        "label": "Friendster",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177626_629gg",
+      "attributes": {
+        "label": "social interaction",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_ov29t",
+      "attributes": {
+        "label": "MySpace",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_fhtfk",
+      "attributes": {
+        "label": "Facebook",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_n1jp2",
+      "attributes": {
+        "label": "Twitter",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_a1usn",
+      "attributes": {
+        "label": "public discourse",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_wc0ra",
+      "attributes": {
+        "label": "Smartphones",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_2l1cc",
+      "attributes": {
+        "label": "information consumption",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_u2ad8",
+      "attributes": {
+        "label": "Cloud computing",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_az1i5",
+      "attributes": {
+        "label": "computational resources",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_86o5g",
+      "attributes": {
+        "label": "Artificial intelligence",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_gtoij",
+      "attributes": {
+        "label": "data",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_8vatt",
+      "attributes": {
+        "label": "Open standards",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791193177627_qpvgz",
+      "attributes": {
+        "label": "Hyperlink",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "n_1791212726531_3sau3",
+      "attributes": {
+        "label": "Python",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T15:05:26.531Z"
+      }
+    },
+    {
+      "key": "n_1791212726531_bejym",
+      "attributes": {
+        "label": "Guido van Rossum",
+        "type": "PERSON",
+        "addedAt": "2026-10-05T15:05:26.531Z"
+      }
+    },
+    {
+      "key": "n_1791212781971_3ml2n",
+      "attributes": {
+        "label": "Kinjangi Tarun",
+        "type": "PERSON",
+        "addedAt": "2026-10-05T15:06:21.971Z"
+      }
+    },
+    {
+      "key": "n_1791212781971_ym5x8",
+      "attributes": {
+        "label": "November 23, 2024",
+        "type": "DATE",
+        "addedAt": "2026-10-05T15:06:21.971Z"
+      }
+    },
+    {
+      "key": "n_1791212781972_2dcgc",
+      "attributes": {
+        "label": "PDF Generator API",
+        "type": "TECHNOLOGY",
+        "addedAt": "2026-10-05T15:06:21.972Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "key": "geid_239_0",
+      "source": "n_1791193177625_p31ql",
+      "target": "n_1791193177625_a6pgl",
+      "attributes": {
+        "predicate": "developed by",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_1",
+      "source": "n_1791193177625_p31ql",
+      "target": "n_1791193177625_yle11",
+      "attributes": {
+        "predicate": "launched in",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_2",
+      "source": "n_1791193177625_nyyg8",
+      "target": "n_1791193177625_fc8xh",
+      "attributes": {
+        "predicate": "located in",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_3",
+      "source": "n_1791193177625_7pgrk",
+      "target": "n_1791193177625_fc8xh",
+      "attributes": {
+        "predicate": "located in",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_4",
+      "source": "n_1791193177625_zz0ha",
+      "target": "n_1791193177625_gynsy",
+      "attributes": {
+        "predicate": "published",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_5",
+      "source": "n_1791193177625_flp28",
+      "target": "n_1791193177625_gynsy",
+      "attributes": {
+        "predicate": "published",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_6",
+      "source": "n_1791193177625_zz0ha",
+      "target": "n_1791193177625_flp28",
+      "attributes": {
+        "predicate": "co-authored paper with",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_7",
+      "source": "n_1791193177625_gynsy",
+      "target": "n_1791193177625_92fvu",
+      "attributes": {
+        "predicate": "published in",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_8",
+      "source": "n_1791193177625_sen5l",
+      "target": "n_1791193177625_4ip8y",
+      "attributes": {
+        "predicate": "is core of",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_9",
+      "source": "n_1791193177625_pyhp8",
+      "target": "n_1791193177625_ejjph",
+      "attributes": {
+        "predicate": "introduced in",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_10",
+      "source": "n_1791193177625_jo7mv",
+      "target": "n_1791193177625_rwwzy",
+      "attributes": {
+        "predicate": "created in",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_11",
+      "source": "n_1791193177625_jo7mv",
+      "target": "n_1791193177625_fc8xh",
+      "attributes": {
+        "predicate": "located in",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.625Z"
+      }
+    },
+    {
+      "key": "geid_239_12",
+      "source": "n_1791193177625_cin2b",
+      "target": "n_1791193177626_xypgj",
+      "attributes": {
+        "predicate": "worked at",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_13",
+      "source": "n_1791193177626_xypgj",
+      "target": "n_1791193177626_rphcj",
+      "attributes": {
+        "predicate": "located in",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_14",
+      "source": "n_1791193177625_cin2b",
+      "target": "n_1791193177626_jmusz",
+      "attributes": {
+        "predicate": "released",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_15",
+      "source": "n_1791193177626_jmusz",
+      "target": "n_1791193177626_mu4ei",
+      "attributes": {
+        "predicate": "released in",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_16",
+      "source": "n_1791193177625_cin2b",
+      "target": "n_1791193177626_9v8e5",
+      "attributes": {
+        "predicate": "invented",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_17",
+      "source": "n_1791193177625_cin2b",
+      "target": "n_1791193177626_x0xdp",
+      "attributes": {
+        "predicate": "invented",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_18",
+      "source": "n_1791193177625_cin2b",
+      "target": "n_1791193177626_wbj3t",
+      "attributes": {
+        "predicate": "invented",
+        "sourceChunkIds": [
+          1
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_19",
+      "source": "n_1791193177626_gfbtb",
+      "target": "n_1791193177626_ji2mv",
+      "attributes": {
+        "predicate": "launched in",
+        "sourceChunkIds": [
+          1,
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_20",
+      "source": "n_1791193177626_33uyw",
+      "target": "n_1791193177626_x053t",
+      "attributes": {
+        "predicate": "occurred in",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_21",
+      "source": "n_1791193177626_33uyw",
+      "target": "n_1791193177626_fx043",
+      "attributes": {
+        "predicate": "burst in",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_22",
+      "source": "n_1791193177626_mhebq",
+      "target": "n_1791193177626_g4dy3",
+      "attributes": {
+        "predicate": "launched in",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_23",
+      "source": "n_1791193177626_uo8uy",
+      "target": "n_1791193177626_c2y3r",
+      "attributes": {
+        "predicate": "founded in",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_24",
+      "source": "n_1791193177626_n56fb",
+      "target": "n_1791193177626_7v0x2",
+      "attributes": {
+        "predicate": "debuted in",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_25",
+      "source": "n_1791193177626_yl4ni",
+      "target": "n_1791193177626_sc33w",
+      "attributes": {
+        "predicate": "replaced",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_26",
+      "source": "n_1791193177626_yx51c",
+      "target": "n_1791193177626_629gg",
+      "attributes": {
+        "predicate": "redefined",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.626Z"
+      }
+    },
+    {
+      "key": "geid_239_27",
+      "source": "n_1791193177627_ov29t",
+      "target": "n_1791193177626_629gg",
+      "attributes": {
+        "predicate": "redefined",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_28",
+      "source": "n_1791193177627_fhtfk",
+      "target": "n_1791193177626_629gg",
+      "attributes": {
+        "predicate": "redefined",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_29",
+      "source": "n_1791193177627_n1jp2",
+      "target": "n_1791193177627_a1usn",
+      "attributes": {
+        "predicate": "distilled",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_30",
+      "source": "n_1791193177627_wc0ra",
+      "target": "n_1791193177627_2l1cc",
+      "attributes": {
+        "predicate": "changed",
+        "sourceChunkIds": [
+          2
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_31",
+      "source": "n_1791193177627_u2ad8",
+      "target": "n_1791193177627_az1i5",
+      "attributes": {
+        "predicate": "allows renting of",
+        "sourceChunkIds": [
+          3
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_32",
+      "source": "n_1791193177627_86o5g",
+      "target": "n_1791193177627_gtoij",
+      "attributes": {
+        "predicate": "is trained on",
+        "sourceChunkIds": [
+          3
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_33",
+      "source": "n_1791193177627_8vatt",
+      "target": "n_1791193177625_4ip8y",
+      "attributes": {
+        "predicate": "are core ideas of",
+        "sourceChunkIds": [
+          3
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_34",
+      "source": "n_1791193177625_sen5l",
+      "target": "n_1791193177625_4ip8y",
+      "attributes": {
+        "predicate": "are core ideas of",
+        "sourceChunkIds": [
+          3
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_239_35",
+      "source": "n_1791193177627_qpvgz",
+      "target": "n_1791193177625_4ip8y",
+      "attributes": {
+        "predicate": "are core ideas of",
+        "sourceChunkIds": [
+          3
+        ],
+        "addedAt": "2026-10-05T09:39:37.627Z"
+      }
+    },
+    {
+      "key": "geid_223_0",
+      "source": "n_1791212726531_3sau3",
+      "target": "n_1791212726531_bejym",
+      "attributes": {
+        "predicate": "created by",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T15:05:26.531Z"
+      }
+    },
+    {
+      "key": "geid_223_1",
+      "source": "n_1791212726531_3sau3",
+      "target": "n_1791193177626_mu4ei",
+      "attributes": {
+        "predicate": "released in",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T15:05:26.531Z"
+      }
+    },
+    {
+      "key": "geid_225_0",
+      "source": "n_1791212781971_3ml2n",
+      "target": "n_1791212781971_ym5x8",
+      "attributes": {
+        "predicate": "associated with",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T15:06:21.971Z"
+      }
+    },
+    {
+      "key": "geid_225_1",
+      "source": "n_1791212781972_2dcgc",
+      "target": "n_1791212781971_3ml2n",
+      "attributes": {
+        "predicate": "powers",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-05T15:06:21.972Z"
+      }
+    }
+  ]
+}

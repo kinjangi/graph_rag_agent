@@ -1,0 +1,213 @@
+/* ── Home page styles ────────────────────────────────────────────────────── */
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 1.5rem 6rem;
+  overflow: hidden;
+}
+
+/* ── Ambient glow orbs ───────────────────────────────────────────────────── */
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.35;
+  pointer-events: none;
+  animation: drift 14s ease-in-out infinite alternate;
+}
+
+.orb-1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, hsl(262, 90%, 65%), transparent 70%);
+  top: -180px;
+  left: -120px;
+  animation-duration: 18s;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, hsl(200, 90%, 60%), transparent 70%);
+  top: 60px;
+  right: -100px;
+  animation-duration: 22s;
+  animation-delay: -6s;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, hsl(320, 80%, 60%), transparent 70%);
+  bottom: 10%;
+  left: 30%;
+  animation-duration: 16s;
+  animation-delay: -3s;
+}
+
+@keyframes drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(30px, 20px) scale(1.07); }
+}
+
+/* ── Hero ────────────────────────────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: hsl(262 60% 60% / 0.15);
+  border: 1px solid hsl(262 60% 60% / 0.35);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: hsl(262, 80%, 80%);
+  text-transform: uppercase;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(262, 80%, 70%);
+  box-shadow: 0 0 6px hsl(262, 80%, 70%);
+}
+
+.title {
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: hsl(220, 20%, 96%);
+  margin: 0;
+}
+
+.accent {
+  background: linear-gradient(135deg, hsl(262, 90%, 72%), hsl(200, 90%, 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  color: hsl(220, 15%, 65%);
+  max-width: 520px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Status row ──────────────────────────────────────────────────────────── */
+
+.status-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.health-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: hsl(220 20% 14% / 0.7);
+  border: 1px solid hsl(220 20% 30% / 0.5);
+  font-size: 0.8rem;
+  color: hsl(220, 15%, 65%);
+  backdrop-filter: blur(8px);
+}
+
+.pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: hsl(45, 90%, 60%);
+  box-shadow: 0 0 6px hsl(45, 90%, 60%);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.8); }
+}
+
+/* ── Feature cards ───────────────────────────────────────────────────────── */
+
+.cards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 960px;
+}
+
+.card {
+  position: relative;
+  padding: 2rem 1.75rem;
+  border-radius: 16px;
+  background: hsl(220 20% 10% / 0.7);
+  border: 1px solid hsl(220 20% 22% / 0.7);
+  backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: hsl(262 70% 60% / 0.5);
+  box-shadow: 0 12px 40px hsl(262 80% 50% / 0.15);
+}
+
+.card-step {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: hsl(220, 15%, 40%);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: hsl(220, 20%, 92%);
+  margin: 0 0 0.6rem;
+}
+
+.card-desc {
+  font-size: 0.875rem;
+  color: hsl(220, 15%, 60%);
+  line-height: 1.65;
+  margin: 0;
+}
