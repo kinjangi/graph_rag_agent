@@ -10,6 +10,7 @@ import {
   MessageSquare,
   Sparkles 
 } from "lucide-react";
+import { API_ENDPOINTS } from "../config/api";
 import "./DocumentUpload.css";
 
 export default function DocumentUpload({ onNavigate }) {
@@ -96,7 +97,7 @@ export default function DocumentUpload({ onNavigate }) {
       const formData = new FormData();
       formData.append("document", selectedFile);
 
-      const uploadRes = await fetchWithTimeout("http://localhost:4001/api/documents/upload", {
+      const uploadRes = await fetchWithTimeout(API_ENDPOINTS.UPLOAD, {
         method: "POST",
         body: formData
       }, 30000);
@@ -119,7 +120,7 @@ export default function DocumentUpload({ onNavigate }) {
       // Step 2: Extract Triples
       setCurrentStep(2);
 
-      const extractRes = await fetchWithTimeout("http://localhost:4001/api/documents/extract", {
+      const extractRes = await fetchWithTimeout(API_ENDPOINTS.EXTRACT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ chunks })
@@ -140,7 +141,7 @@ export default function DocumentUpload({ onNavigate }) {
       // Step 3: Build Graph
       setCurrentStep(3);
 
-      const graphRes = await fetchWithTimeout("http://localhost:4001/api/graph/build", {
+      const graphRes = await fetchWithTimeout(API_ENDPOINTS.GRAPH_BUILD, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ triples })

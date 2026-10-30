@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Network, UploadCloud, MessageSquare, Share2, Sun, Moon } from "lucide-react";
 import { useTheme } from "../state/ThemeContext";
+import { API_ENDPOINTS } from "../config/api";
 import "./Navbar.css";
 
 export default function Navbar({ activeTab, setActiveTab }) {
@@ -11,7 +12,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
     let isMounted = true;
     const checkHealth = async () => {
       try {
-        const res = await fetch("http://localhost:4001/api/health");
+        const res = await fetch(API_ENDPOINTS.HEALTH);
         if (res.ok) {
           const data = await res.json();
           if (isMounted) setHealth({ status: "online", online: true, ...data });

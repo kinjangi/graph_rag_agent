@@ -10,6 +10,7 @@ import {
   Box,
   FileCode2
 } from "lucide-react";
+import { API_ENDPOINTS } from "../config/api";
 import "./GraphExplorer.css";
 
 export default function GraphExplorer({ onNavigate }) {
@@ -24,7 +25,7 @@ export default function GraphExplorer({ onNavigate }) {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("http://localhost:4001/api/graph");
+      const res = await fetch(API_ENDPOINTS.GRAPH);
       if (!res.ok) {
         if (res.status === 404) {
           setGraphData({ summary: { nodeCount: 0, edgeCount: 0 }, nodes: [], edges: [] });
@@ -52,7 +53,7 @@ export default function GraphExplorer({ onNavigate }) {
     }
 
     try {
-      const res = await fetch("http://localhost:4001/api/graph", { method: "DELETE" });
+      const res = await fetch(API_ENDPOINTS.GRAPH, { method: "DELETE" });
       if (res.ok) {
         fetchGraph();
       } else {

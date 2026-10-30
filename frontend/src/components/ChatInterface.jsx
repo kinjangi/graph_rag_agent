@@ -13,6 +13,7 @@ import {
   Database,
   FileCode2
 } from "lucide-react";
+import { API_ENDPOINTS } from "../config/api";
 import "./ChatInterface.css";
 
 const PRESET_QUESTIONS = [
@@ -59,7 +60,7 @@ export default function ChatInterface() {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:4001/api/query/ask", {
+      const response = await fetch(API_ENDPOINTS.QUERY_ASK, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question })
