@@ -182,8 +182,19 @@ export default function DocumentUpload({ onNavigate }) {
 
       {errorMsg && (
         <div className="error-banner">
-          <AlertCircle size={20} />
-          <span>{errorMsg}</span>
+          <AlertCircle size={20} className="error-banner-icon" />
+          <div className="error-banner-body">
+            <span className="error-banner-text">{errorMsg}</span>
+          </div>
+          {selectedFile && (
+            <button 
+              type="button" 
+              className="retry-inline-btn" 
+              onClick={startPipeline}
+            >
+              Retry Ingestion
+            </button>
+          )}
         </div>
       )}
 
@@ -221,18 +232,21 @@ export default function DocumentUpload({ onNavigate }) {
         </div>
       )}
 
-      {selectedFile && status === "idle" && (
+      {selectedFile && (status === "idle" || status === "error") && (
         <div className="file-selected-bar">
           <div className="file-info">
             <FileText size={20} className="accent-purple" />
             <div>
-              <div>{selectedFile.name}</div>
+              <div className="file-name-text">{selectedFile.name}</div>
               <div className="file-size">{formatBytes(selectedFile.size)}</div>
             </div>
           </div>
-          <button className="process-start-btn" onClick={startPipeline}>
+          <button 
+            className={`process-start-btn ${status === "error" ? "retry-btn" : ""}`} 
+            onClick={startPipeline}
+          >
             <Sparkles size={16} />
-            Start Pipeline
+            {status === "error" ? "Retry Pipeline" : "Start Pipeline"}
           </button>
         </div>
       )}

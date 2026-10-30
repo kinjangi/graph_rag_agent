@@ -37,6 +37,28 @@ function getRetryDelayMs(err, attempt) {
   return Math.min(45000, 3000 * Math.pow(2, attempt - 1));
 }
 
+function isRateOrDemandError(err) {
+  const status = err?.status || err?.statusCode || err?.code;
+  const msg = (err?.message || "").toLowerCase();
+  return (
+    status === 429 ||
+    status === 503 ||
+    status === 500 ||
+    status === 504 ||
+    msg.includes("429") ||
+    msg.includes("503") ||
+    msg.includes("quota") ||
+    msg.includes("rate") ||
+    msg.includes("exhausted") ||
+    msg.includes("resource_exhausted") ||
+    msg.includes("high demand") ||
+    msg.includes("unavailable") ||
+    msg.includes("overloaded") ||
+    msg.includes("too many requests") ||
+    msg.includes("temporarily unavailable")
+  );
+}
+
 /**
  * Extract triples from one chunk, retrying on 429 and 503 with smart backoff.
  * Attaches `sourceChunkId` to every returned triple.
@@ -46,16 +68,7 @@ async function extractWithRetry(chunk, attempt = 1) {
     const triples = await extractTriplesFromChunk(chunk.text);
     return triples.map((t) => ({ ...t, sourceChunkId: chunk.id }));
   } catch (err) {
-    const isRateOrDemand =
-      err?.status === 429 ||
-      err?.status === 503 ||
-      err?.message?.includes("429") ||
-      err?.message?.includes("503") ||
-      err?.message?.toLowerCase().includes("quota") ||
-      err?.message?.toLowerCase().includes("rate") ||
-      err?.message?.toLowerCase().includes("high demand") ||
-      err?.message?.toLowerCase().includes("unavailable") ||
-      err?.message?.toLowerCase().includes("overloaded");
+    const isRateOrDemand = isRateOrDemandError(err);
 
     if (isRateOrDemand && attempt <= MAX_RETRIES) {
       const waitMs = getRetryDelayMs(err, attempt);
@@ -123,11 +136,13 @@ router.post("/extract", async (req, res) => {
     console.log(`[extract] Processing ${chunks.length} chunk(s) …`);
 
     // ── Build task list and run with concurrency cap ─────────────────────────
+    let lastChunkError = null;
     const tasks = chunks.map((chunk, idx) => async () => {
       try {
-        if (idx > 0) await sleep(1200);
+        if (idx > 0) await sleep(2000); // 2s spacing between chunk requests to stay within free-tier RPM
         return await extractWithRetry(chunk);
       } catch (err) {
+        lastChunkError = err;
         console.error(`[extract] Chunk ${chunk.id} failed after retries:`, err.message);
         return [];
       }
@@ -139,9 +154,13 @@ router.post("/extract", async (req, res) => {
     const allTriples = nestedResults.flat();
 
     if (allTriples.length === 0) {
+      const errDetail = lastChunkError?.message
+        ? `Model error: ${lastChunkError.message.slice(0, 160)}`
+        : "Text contained no clear entity relationships or model output was empty.";
+
       return res.status(503).json({
         error: "Gemini AI was unable to extract triples (model may be temporarily overloaded or text contained no clear entity relationships).",
-        detail: "Please click Start Pipeline again to retry."
+        detail: errDetail
       });
     }
 

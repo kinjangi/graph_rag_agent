@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { Network, UploadCloud, MessageSquare, Share2, Activity } from "lucide-react";
+import { Network, UploadCloud, MessageSquare, Share2, Sun, Moon } from "lucide-react";
+import { useTheme } from "../state/ThemeContext";
 import "./Navbar.css";
 
 export default function Navbar({ activeTab, setActiveTab }) {
   const [health, setHealth] = useState({ status: "checking", online: false });
+  const { theme, toggleTheme, isDark } = useTheme();
 
   useEffect(() => {
     let isMounted = true;
@@ -67,10 +69,36 @@ export default function Navbar({ activeTab, setActiveTab }) {
         </button>
       </nav>
 
-      <div className="nav-status">
-        <div className={`status-pill ${health.online ? "online" : "offline"}`}>
-          <span className="status-dot" />
-          <span>{health.online ? "Backend Ready" : "Backend Offline"}</span>
+      <div className="nav-actions">
+        {/* Theme Toggle Button */}
+        <button
+          type="button"
+          className="theme-toggle-btn"
+          onClick={toggleTheme}
+          title={isDark ? "Switch to Light Mode (Bright Room)" : "Switch to Dark Mode"}
+          aria-label={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        >
+          <div className="theme-toggle-inner">
+            {isDark ? (
+              <>
+                <Sun size={16} className="theme-icon sun" />
+                <span className="theme-label">Light Mode</span>
+              </>
+            ) : (
+              <>
+                <Moon size={16} className="theme-icon moon" />
+                <span className="theme-label">Dark Mode</span>
+              </>
+            )}
+          </div>
+        </button>
+
+        {/* Backend Status Pill */}
+        <div className="nav-status">
+          <div className={`status-pill ${health.online ? "online" : "offline"}`}>
+            <span className="status-dot" />
+            <span>{health.online ? "Backend Ready" : "Backend Offline"}</span>
+          </div>
         </div>
       </div>
     </header>

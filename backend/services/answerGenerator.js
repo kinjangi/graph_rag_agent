@@ -5,16 +5,37 @@
 import { getModel, GEMINI_MODEL } from "./geminiClient.js";
 
 function parseJsonSafely(text) {
+  if (!text || typeof text !== "string") {
+    return { answer: "Unable to generate an answer.", confidence: "low", factsUsed: [] };
+  }
   try {
-    const cleaned = text.replace(/^```json\s*/, '').replace(/\s*```$/, '').trim();
-    const startIdx = cleaned.indexOf('{');
-    const endIdx = cleaned.lastIndexOf('}');
+    const cleaned = text
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```\s*$/i, "")
+      .trim();
+
+    try {
+      return JSON.parse(cleaned);
+    } catch (_) {}
+
+    const startIdx = cleaned.indexOf("{");
+    const endIdx = cleaned.lastIndexOf("}");
     if (startIdx >= 0 && endIdx > startIdx) {
       return JSON.parse(cleaned.substring(startIdx, endIdx + 1));
     }
     return JSON.parse(cleaned);
   } catch (err) {
-    throw new Error(`Failed to parse Gemini output as JSON: ${err.message}\nRaw output: ${text}`);
+    console.warn(`[answerGenerator] JSON parse fallback. Generating fallback from raw text.`);
+    // Fall back to raw text if model returned plain string
+    const fallbackText = text
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```\s*$/i, "")
+      .trim();
+    return {
+      answer: fallbackText,
+      confidence: "medium",
+      factsUsed: []
+    };
   }
 }
 

@@ -10,16 +10,34 @@ import { isContainedIn, areSimilar, toKey } from "../utils/textMatching.js";
 
 // Utility to parse JSON safely if Gemini wraps it in markdown fences
 function parseJsonSafely(text) {
+  if (!text || typeof text !== "string") return {};
   try {
-    const cleaned = text.replace(/^```json\s*/, '').replace(/\s*```$/, '').trim();
-    const startIdx = cleaned.indexOf('{');
-    const endIdx = cleaned.lastIndexOf('}');
-    if (startIdx >= 0 && endIdx > startIdx) {
-      return JSON.parse(cleaned.substring(startIdx, endIdx + 1));
+    const cleaned = text
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```\s*$/i, "")
+      .trim();
+
+    try {
+      return JSON.parse(cleaned);
+    } catch (_) {}
+
+    const firstBrace = cleaned.indexOf("{");
+    const lastBrace = cleaned.lastIndexOf("}");
+    if (firstBrace >= 0 && lastBrace > firstBrace) {
+      return JSON.parse(cleaned.substring(firstBrace, lastBrace + 1));
     }
+
+    const firstBracket = cleaned.indexOf("[");
+    const lastBracket = cleaned.lastIndexOf("]");
+    if (firstBracket >= 0 && lastBracket > firstBracket) {
+      const arr = JSON.parse(cleaned.substring(firstBracket, lastBracket + 1));
+      return { entities: arr };
+    }
+
     return JSON.parse(cleaned);
   } catch (err) {
-    throw new Error(`Failed to parse Gemini output as JSON: ${err.message}\nRaw output: ${text}`);
+    console.warn(`[retrieval] JSON parse fallback. Raw output: ${text?.slice(0, 200)}`);
+    return {};
   }
 }
 

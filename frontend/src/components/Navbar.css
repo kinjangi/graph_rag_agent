@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(9, 13, 22, 0.85);
+  background: var(--bg-navbar);
   backdrop-filter: var(--backdrop-blur);
   -webkit-backdrop-filter: var(--backdrop-blur);
   border-bottom: 1px solid var(--border-subtle);
@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .nav-brand {
@@ -29,8 +30,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #090d16;
+  color: #ffffff;
   box-shadow: 0 0 15px var(--accent-purple-glow);
+  flex-shrink: 0;
 }
 
 .brand-title-group {
@@ -42,7 +44,7 @@
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  background: linear-gradient(135deg, #ffffff 40%, var(--accent-purple) 100%);
+  background: linear-gradient(135deg, var(--fg-heading) 40%, var(--accent-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -59,10 +61,11 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--bg-navtabs);
   padding: 0.3rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-subtle);
+  transition: background-color 0.25s ease;
 }
 
 .nav-tab-btn {
@@ -71,7 +74,7 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
-  border: none;
+  border: 1px solid transparent;
   background: transparent;
   color: var(--fg-muted);
   font-family: var(--font-sans);
@@ -83,20 +86,84 @@
 
 .nav-tab-btn:hover {
   color: var(--fg-default);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-chip-hover);
 }
 
 .nav-tab-btn.active {
-  color: #ffffff;
-  background: linear-gradient(135deg, rgba(192, 132, 252, 0.2), rgba(56, 189, 248, 0.15));
-  border: 1px solid rgba(192, 132, 252, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: var(--fg-heading);
+  background: linear-gradient(135deg, var(--accent-purple-bg), var(--accent-cyan-bg));
+  border: 1px solid var(--accent-purple-glow);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   font-weight: 600;
+}
+
+[data-theme="light"] .nav-tab-btn.active {
+  background: #ffffff;
+  color: var(--accent-purple);
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.12);
 }
 
 .nav-tab-icon {
   display: flex;
   align-items: center;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: var(--bg-navtabs);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fg-default);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--bg-chip-hover);
+  border-color: var(--border-hover);
+  color: var(--accent-purple);
+  transform: translateY(-1px);
+}
+
+.theme-toggle-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.theme-icon {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.theme-icon.sun {
+  color: var(--accent-amber);
+}
+
+.theme-icon.moon {
+  color: var(--accent-purple);
+}
+
+.theme-toggle-btn:hover .theme-icon {
+  transform: rotate(20deg) scale(1.1);
+}
+
+.theme-label {
+  white-space: nowrap;
 }
 
 .nav-status {
@@ -112,18 +179,19 @@
   font-weight: 500;
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--bg-card-subtle);
   border: 1px solid var(--border-subtle);
   color: var(--fg-muted);
+  transition: all 0.25s ease;
 }
 
 .status-pill.online {
-  border-color: rgba(52, 211, 153, 0.3);
+  border-color: rgba(52, 211, 153, 0.35);
   color: var(--accent-emerald);
 }
 
 .status-pill.offline {
-  border-color: rgba(248, 113, 113, 0.3);
+  border-color: rgba(248, 113, 113, 0.35);
   color: var(--accent-rose);
 }
 
@@ -142,6 +210,15 @@
 
 .status-pill.offline .status-dot {
   background: var(--accent-rose);
+}
+
+@media (max-width: 860px) {
+  .theme-label {
+    display: none;
+  }
+  .theme-toggle-btn {
+    padding: 0.45rem;
+  }
 }
 
 @media (max-width: 768px) {

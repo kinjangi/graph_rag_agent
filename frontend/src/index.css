@@ -8,31 +8,49 @@
   padding: 0;
 }
 
-:root {
-  /* Color system */
-  --bg-base:        #090d16;
-  --bg-surface:     rgba(15, 23, 42, 0.7);
-  --bg-surface-hover: rgba(30, 41, 59, 0.8);
-  --bg-card:        rgba(15, 23, 42, 0.5);
-  
-  --fg-default:     #f1f5f9;
-  --fg-muted:       #94a3b8;
-  --fg-subtle:      #64748b;
+:root,
+[data-theme="dark"] {
+  /* Color system - Dark Theme */
+  --bg-base:          #090d16;
+  --bg-surface:       rgba(15, 23, 42, 0.75);
+  --bg-surface-hover: rgba(30, 41, 59, 0.85);
+  --bg-card:          rgba(15, 23, 42, 0.5);
+  --bg-card-subtle:   rgba(15, 23, 42, 0.6);
+  --bg-card-elevated: rgba(30, 41, 59, 0.6);
+  --bg-input:         rgba(15, 23, 42, 0.85);
+  --bg-header:        rgba(15, 23, 42, 0.4);
+  --bg-subtle-bar:    rgba(15, 23, 42, 0.25);
+  --bg-drawer:        rgba(15, 23, 42, 0.6);
+  --bg-fact:          rgba(0, 0, 0, 0.35);
+  --bg-navbar:        rgba(9, 13, 22, 0.85);
+  --bg-navtabs:       rgba(15, 23, 42, 0.6);
+  --bg-chip:          rgba(255, 255, 255, 0.05);
+  --bg-chip-hover:    rgba(192, 132, 252, 0.15);
 
-  --border-subtle:  rgba(255, 255, 255, 0.08);
-  --border-hover:   rgba(168, 85, 247, 0.4);
+  --fg-default:       #f1f5f9;
+  --fg-heading:       #ffffff;
+  --fg-muted:         #94a3b8;
+  --fg-subtle:        #64748b;
+
+  --border-subtle:    rgba(255, 255, 255, 0.08);
+  --border-hover:     rgba(168, 85, 247, 0.4);
 
   /* Accents */
-  --accent-purple:  #c084fc;
+  --accent-purple:      #c084fc;
   --accent-purple-glow: rgba(192, 132, 252, 0.25);
-  --accent-cyan:    #38bdf8;
-  --accent-cyan-glow: rgba(56, 189, 248, 0.25);
-  --accent-emerald: #34d399;
-  --accent-emerald-glow: rgba(52, 211, 153, 0.25);
-  --accent-amber:   #fbbf24;
-  --accent-amber-glow: rgba(251, 191, 36, 0.25);
-  --accent-rose:    #f87171;
-  --accent-rose-glow: rgba(248, 113, 113, 0.25);
+  --accent-purple-bg:   rgba(192, 132, 252, 0.15);
+  --accent-cyan:        #38bdf8;
+  --accent-cyan-glow:   rgba(56, 189, 248, 0.25);
+  --accent-cyan-bg:     rgba(56, 189, 248, 0.15);
+  --accent-emerald:     #34d399;
+  --accent-emerald-glow:rgba(52, 211, 153, 0.25);
+  --accent-emerald-bg:  rgba(52, 211, 153, 0.15);
+  --accent-amber:       #fbbf24;
+  --accent-amber-glow:  rgba(251, 191, 36, 0.25);
+  --accent-amber-bg:    rgba(251, 191, 36, 0.15);
+  --accent-rose:        #f87171;
+  --accent-rose-glow:   rgba(248, 113, 113, 0.25);
+  --accent-rose-bg:     rgba(248, 113, 113, 0.15);
 
   /* Typography */
   --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -47,6 +65,67 @@
   --shadow-glow: 0 0 25px rgba(192, 132, 252, 0.15);
   --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   --backdrop-blur: blur(16px);
+
+  /* Background Grid Pattern */
+  --bg-pattern:
+    radial-gradient(circle at 15% 15%, rgba(192, 132, 252, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+[data-theme="light"] {
+  /* Color system - Light Theme */
+  --bg-base:          #f4f6fb;
+  --bg-surface:       rgba(255, 255, 255, 0.92);
+  --bg-surface-hover: rgba(241, 245, 249, 0.98);
+  --bg-card:          #ffffff;
+  --bg-card-subtle:   rgba(241, 245, 249, 0.9);
+  --bg-card-elevated: #f8fafc;
+  --bg-input:         #ffffff;
+  --bg-header:        rgba(248, 250, 252, 0.85);
+  --bg-subtle-bar:    rgba(241, 245, 249, 0.7);
+  --bg-drawer:        rgba(248, 250, 252, 0.95);
+  --bg-fact:          rgba(124, 58, 237, 0.05);
+  --bg-navbar:        rgba(255, 255, 255, 0.9);
+  --bg-navtabs:       rgba(226, 232, 240, 0.75);
+  --bg-chip:          rgba(0, 0, 0, 0.04);
+  --bg-chip-hover:    rgba(124, 58, 237, 0.12);
+
+  --fg-default:       #1e293b;
+  --fg-heading:       #0f172a;
+  --fg-muted:         #64748b;
+  --fg-subtle:        #94a3b8;
+
+  --border-subtle:    rgba(0, 0, 0, 0.09);
+  --border-hover:     rgba(124, 58, 237, 0.4);
+
+  /* Accents - calibrated for light mode contrast */
+  --accent-purple:      #7c3aed;
+  --accent-purple-glow: rgba(124, 58, 237, 0.2);
+  --accent-purple-bg:   rgba(124, 58, 237, 0.1);
+  --accent-cyan:        #0284c7;
+  --accent-cyan-glow:   rgba(2, 132, 199, 0.2);
+  --accent-cyan-bg:     rgba(2, 132, 199, 0.1);
+  --accent-emerald:     #059669;
+  --accent-emerald-glow:rgba(5, 150, 105, 0.2);
+  --accent-emerald-bg:  rgba(5, 150, 105, 0.1);
+  --accent-amber:       #d97706;
+  --accent-amber-glow:  rgba(217, 119, 6, 0.2);
+  --accent-amber-bg:    rgba(217, 119, 6, 0.1);
+  --accent-rose:        #e11d48;
+  --accent-rose-glow:   rgba(225, 29, 72, 0.2);
+  --accent-rose-bg:     rgba(225, 29, 72, 0.1);
+
+  --shadow-glow: 0 0 20px rgba(124, 58, 237, 0.15);
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+
+  /* Background Grid Pattern */
+  --bg-pattern:
+    radial-gradient(circle at 15% 15%, rgba(124, 58, 237, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(2, 132, 199, 0.05) 0%, transparent 40%),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
 html {
@@ -63,14 +142,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
 
   /* Dynamic ambient background grid */
-  background-image:
-    radial-gradient(circle at 15% 15%, rgba(192, 132, 252, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 85% 75%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-image: var(--bg-pattern);
   background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  background-attachment: fixed;
 }
 
 #root {
@@ -84,11 +161,11 @@ body {
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb {
-  background: rgba(192, 132, 252, 0.3);
+  background: var(--accent-purple-glow);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(192, 132, 252, 0.6);
+  background: var(--accent-purple);
 }
 
 /* ── Utility Animations ─────────────────────────────────────────────────── */

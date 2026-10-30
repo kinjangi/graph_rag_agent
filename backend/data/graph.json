@@ -7,934 +7,1072 @@
   "attributes": {},
   "nodes": [
     {
-      "key": "n_1791193177625_p31ql",
+      "key": "n_1791268055972_znjhf",
       "attributes": {
         "label": "ARPANET",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_a6pgl",
+      "key": "n_1791268055972_8r34x",
       "attributes": {
         "label": "United States Department of Defense",
         "type": "ORGANIZATION",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_yle11",
+      "key": "n_1791268055972_1etj1",
       "attributes": {
         "label": "1969",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_nyyg8",
+      "key": "n_1791268055972_lt4cr",
       "attributes": {
         "label": "UCLA",
         "type": "LOCATION",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_fc8xh",
+      "key": "n_1791268055972_tbwz4",
       "attributes": {
         "label": "United States",
         "type": "LOCATION",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_7pgrk",
+      "key": "n_1791268055972_m6qpi",
       "attributes": {
         "label": "Stanford Research Institute",
         "type": "LOCATION",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_zz0ha",
+      "key": "n_1791268055972_bzm54",
       "attributes": {
         "label": "Vint Cerf",
         "type": "PERSON",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_gynsy",
+      "key": "n_1791268055972_jlui0",
       "attributes": {
         "label": "TCP",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_flp28",
+      "key": "n_1791268055972_gf037",
       "attributes": {
         "label": "Bob Kahn",
         "type": "PERSON",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_92fvu",
+      "key": "n_1791268055972_rzm5p",
       "attributes": {
         "label": "1974",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_sen5l",
+      "key": "n_1791268055972_fvhsp",
       "attributes": {
         "label": "Packet switching",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_4ip8y",
+      "key": "n_1791268055972_nxnz5",
       "attributes": {
         "label": "Internet",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_pyhp8",
+      "key": "n_1791268055972_upj76",
       "attributes": {
         "label": "Domain Name System",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_ejjph",
+      "key": "n_1791268055972_s2if1",
       "attributes": {
         "label": "1983",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_jo7mv",
+      "key": "n_1791268055972_hlb47",
       "attributes": {
         "label": "NSFNET",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_rwwzy",
+      "key": "n_1791268055972_ctdxz",
       "attributes": {
         "label": "1986",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177625_cin2b",
+      "key": "n_1791268055972_3nbsm",
       "attributes": {
         "label": "Tim Berners-Lee",
         "type": "PERSON",
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177626_xypgj",
+      "key": "n_1791268055972_i2inf",
       "attributes": {
         "label": "CERN",
         "type": "ORGANIZATION",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "n_1791193177626_rphcj",
+      "key": "n_1791268055973_hehfi",
       "attributes": {
         "label": "Switzerland",
         "type": "LOCATION",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_jmusz",
+      "key": "n_1791268055973_s6u5n",
       "attributes": {
         "label": "World Wide Web",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_mu4ei",
+      "key": "n_1791268055973_twsy2",
       "attributes": {
         "label": "1991",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_9v8e5",
+      "key": "n_1791268055973_kajj5",
       "attributes": {
         "label": "HTML",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_x0xdp",
+      "key": "n_1791268055973_lpzt1",
       "attributes": {
         "label": "HTTP",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_wbj3t",
+      "key": "n_1791268055973_uwj86",
       "attributes": {
         "label": "URL",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_gfbtb",
+      "key": "n_1791268055973_bfrh3",
       "attributes": {
         "label": "Netscape Navigator",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_ji2mv",
+      "key": "n_1791268055973_2ev53",
       "attributes": {
         "label": "1994",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "n_1791193177626_33uyw",
+      "key": "n_1791268055974_o6xzg",
       "attributes": {
         "label": "dot-com boom",
         "type": "EVENT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_x053t",
+      "key": "n_1791268055974_ejuyp",
       "attributes": {
         "label": "mid-1990s",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_fx043",
+      "key": "n_1791268055974_8susq",
       "attributes": {
         "label": "2000-2001",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_mhebq",
+      "key": "n_1791268055974_aufhi",
       "attributes": {
         "label": "Wikipedia",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_g4dy3",
+      "key": "n_1791268055974_cmmnz",
       "attributes": {
         "label": "2001",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_uo8uy",
+      "key": "n_1791268055974_m71hh",
       "attributes": {
         "label": "YouTube",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_c2y3r",
+      "key": "n_1791268055974_2y6kk",
       "attributes": {
         "label": "2005",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_n56fb",
+      "key": "n_1791268055974_qk73j",
       "attributes": {
         "label": "iPhone",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_7v0x2",
+      "key": "n_1791268055974_14tfz",
       "attributes": {
         "label": "2007",
         "type": "DATE",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_yl4ni",
+      "key": "n_1791268055974_dsm8h",
       "attributes": {
         "label": "Broadband connections",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_sc33w",
+      "key": "n_1791268055974_0ylf1",
       "attributes": {
         "label": "dial-up",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_yx51c",
+      "key": "n_1791268055974_60ets",
       "attributes": {
         "label": "Friendster",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177626_629gg",
+      "key": "n_1791268055974_yizs3",
       "attributes": {
         "label": "social interaction",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177627_ov29t",
+      "key": "n_1791268055974_0jvv8",
       "attributes": {
         "label": "MySpace",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177627_fhtfk",
+      "key": "n_1791268055974_86sjo",
       "attributes": {
         "label": "Facebook",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "n_1791193177627_n1jp2",
+      "key": "n_1791268055975_y7i1a",
       "attributes": {
         "label": "Twitter",
         "type": "PRODUCT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_a1usn",
+      "key": "n_1791268055975_gpbhw",
       "attributes": {
         "label": "public discourse",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_wc0ra",
+      "key": "n_1791268055975_6rw18",
       "attributes": {
         "label": "Smartphones",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_2l1cc",
+      "key": "n_1791268055975_xlvyg",
       "attributes": {
         "label": "information consumption",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_u2ad8",
+      "key": "n_1791268055975_epv5n",
       "attributes": {
         "label": "Cloud computing",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_az1i5",
+      "key": "n_1791268055975_9tegj",
       "attributes": {
         "label": "computational resources",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_86o5g",
+      "key": "n_1791268055975_6mlor",
       "attributes": {
         "label": "Artificial intelligence",
         "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_gtoij",
+      "key": "n_1791268055975_jve3a",
       "attributes": {
         "label": "data",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_8vatt",
+      "key": "n_1791268055975_zrlxe",
       "attributes": {
         "label": "Open standards",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791193177627_qpvgz",
+      "key": "n_1791268055975_4ki34",
       "attributes": {
         "label": "Hyperlink",
         "type": "CONCEPT",
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "n_1791212726531_3sau3",
+      "key": "n_1791269054503_66m0d",
       "attributes": {
-        "label": "Python",
-        "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T15:05:26.531Z"
-      }
-    },
-    {
-      "key": "n_1791212726531_bejym",
-      "attributes": {
-        "label": "Guido van Rossum",
+        "label": "Steve Jobs",
         "type": "PERSON",
-        "addedAt": "2026-10-05T15:05:26.531Z"
+        "addedAt": "2026-10-06T06:44:14.503Z"
       }
     },
     {
-      "key": "n_1791212781971_3ml2n",
+      "key": "n_1791269639639_8g7yq",
       "attributes": {
-        "label": "Kinjangi Tarun",
+        "label": "KINJANGI TARUN",
         "type": "PERSON",
-        "addedAt": "2026-10-05T15:06:21.971Z"
+        "addedAt": "2026-10-06T06:53:59.639Z"
       }
     },
     {
-      "key": "n_1791212781971_ym5x8",
+      "key": "n_1791269639640_1malb",
       "attributes": {
-        "label": "November 23, 2024",
-        "type": "DATE",
-        "addedAt": "2026-10-05T15:06:21.971Z"
+        "label": "Applied Machine Learning Specialization",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-06T06:53:59.640Z"
       }
     },
     {
-      "key": "n_1791212781972_2dcgc",
+      "key": "n_1791269639642_f0oyt",
       "attributes": {
-        "label": "PDF Generator API",
-        "type": "TECHNOLOGY",
-        "addedAt": "2026-10-05T15:06:21.972Z"
+        "label": "L&T EduTech",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-06T06:53:59.642Z"
+      }
+    },
+    {
+      "key": "n_1791269639643_onuyd",
+      "attributes": {
+        "label": "LEARNKONNECT",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "n_1791269639643_bjb7z",
+      "attributes": {
+        "label": "M.F.Febin",
+        "type": "PERSON",
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "n_1791269639643_dgz98",
+      "attributes": {
+        "label": "Head",
+        "type": "CONCEPT",
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "n_1791269685285_a4v5s",
+      "attributes": {
+        "label": "Python Essentials 1 course",
+        "type": "PRODUCT",
+        "addedAt": "2026-10-06T06:54:45.285Z"
+      }
+    },
+    {
+      "key": "n_1791269685285_3qapp",
+      "attributes": {
+        "label": "Cisco Networking Academy",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-06T06:54:45.285Z"
+      }
+    },
+    {
+      "key": "n_1791269685286_e1ssd",
+      "attributes": {
+        "label": "OpenEDG Python Institute",
+        "type": "ORGANIZATION",
+        "addedAt": "2026-10-06T06:54:45.286Z"
+      }
+    },
+    {
+      "key": "n_1791269685286_jnz32",
+      "attributes": {
+        "label": "Laura Quintana",
+        "type": "PERSON",
+        "addedAt": "2026-10-06T06:54:45.286Z"
       }
     }
   ],
   "edges": [
     {
-      "key": "geid_239_0",
-      "source": "n_1791193177625_p31ql",
-      "target": "n_1791193177625_a6pgl",
+      "key": "geid_225_0",
+      "source": "n_1791268055972_znjhf",
+      "target": "n_1791268055972_8r34x",
       "attributes": {
         "predicate": "developed by",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_1",
-      "source": "n_1791193177625_p31ql",
-      "target": "n_1791193177625_yle11",
+      "key": "geid_225_1",
+      "source": "n_1791268055972_znjhf",
+      "target": "n_1791268055972_1etj1",
       "attributes": {
         "predicate": "launched in",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_2",
-      "source": "n_1791193177625_nyyg8",
-      "target": "n_1791193177625_fc8xh",
+      "key": "geid_225_2",
+      "source": "n_1791268055972_lt4cr",
+      "target": "n_1791268055972_tbwz4",
       "attributes": {
         "predicate": "located in",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_3",
-      "source": "n_1791193177625_7pgrk",
-      "target": "n_1791193177625_fc8xh",
+      "key": "geid_225_3",
+      "source": "n_1791268055972_m6qpi",
+      "target": "n_1791268055972_tbwz4",
       "attributes": {
         "predicate": "located in",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_4",
-      "source": "n_1791193177625_zz0ha",
-      "target": "n_1791193177625_gynsy",
+      "key": "geid_225_4",
+      "source": "n_1791268055972_bzm54",
+      "target": "n_1791268055972_jlui0",
       "attributes": {
         "predicate": "published",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_5",
-      "source": "n_1791193177625_flp28",
-      "target": "n_1791193177625_gynsy",
+      "key": "geid_225_5",
+      "source": "n_1791268055972_gf037",
+      "target": "n_1791268055972_jlui0",
       "attributes": {
         "predicate": "published",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_6",
-      "source": "n_1791193177625_zz0ha",
-      "target": "n_1791193177625_flp28",
+      "key": "geid_225_6",
+      "source": "n_1791268055972_bzm54",
+      "target": "n_1791268055972_gf037",
       "attributes": {
         "predicate": "co-authored paper with",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_7",
-      "source": "n_1791193177625_gynsy",
-      "target": "n_1791193177625_92fvu",
+      "key": "geid_225_7",
+      "source": "n_1791268055972_jlui0",
+      "target": "n_1791268055972_rzm5p",
       "attributes": {
         "predicate": "published in",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_8",
-      "source": "n_1791193177625_sen5l",
-      "target": "n_1791193177625_4ip8y",
+      "key": "geid_225_8",
+      "source": "n_1791268055972_fvhsp",
+      "target": "n_1791268055972_nxnz5",
       "attributes": {
         "predicate": "is core of",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_9",
-      "source": "n_1791193177625_pyhp8",
-      "target": "n_1791193177625_ejjph",
+      "key": "geid_225_9",
+      "source": "n_1791268055972_upj76",
+      "target": "n_1791268055972_s2if1",
       "attributes": {
         "predicate": "introduced in",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_10",
-      "source": "n_1791193177625_jo7mv",
-      "target": "n_1791193177625_rwwzy",
+      "key": "geid_225_10",
+      "source": "n_1791268055972_hlb47",
+      "target": "n_1791268055972_ctdxz",
       "attributes": {
         "predicate": "created in",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_11",
-      "source": "n_1791193177625_jo7mv",
-      "target": "n_1791193177625_fc8xh",
+      "key": "geid_225_11",
+      "source": "n_1791268055972_hlb47",
+      "target": "n_1791268055972_tbwz4",
       "attributes": {
         "predicate": "located in",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.625Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_12",
-      "source": "n_1791193177625_cin2b",
-      "target": "n_1791193177626_xypgj",
+      "key": "geid_225_12",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055972_i2inf",
       "attributes": {
         "predicate": "worked at",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.972Z"
       }
     },
     {
-      "key": "geid_239_13",
-      "source": "n_1791193177626_xypgj",
-      "target": "n_1791193177626_rphcj",
+      "key": "geid_225_13",
+      "source": "n_1791268055972_i2inf",
+      "target": "n_1791268055973_hehfi",
       "attributes": {
         "predicate": "located in",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_14",
-      "source": "n_1791193177625_cin2b",
-      "target": "n_1791193177626_jmusz",
+      "key": "geid_225_14",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055973_s6u5n",
       "attributes": {
         "predicate": "released",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_15",
-      "source": "n_1791193177626_jmusz",
-      "target": "n_1791193177626_mu4ei",
+      "key": "geid_225_15",
+      "source": "n_1791268055973_s6u5n",
+      "target": "n_1791268055973_twsy2",
       "attributes": {
         "predicate": "released in",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_16",
-      "source": "n_1791193177625_cin2b",
-      "target": "n_1791193177626_9v8e5",
+      "key": "geid_225_16",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055973_kajj5",
       "attributes": {
         "predicate": "invented",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_17",
-      "source": "n_1791193177625_cin2b",
-      "target": "n_1791193177626_x0xdp",
+      "key": "geid_225_17",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055973_lpzt1",
       "attributes": {
         "predicate": "invented",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_18",
-      "source": "n_1791193177625_cin2b",
-      "target": "n_1791193177626_wbj3t",
+      "key": "geid_225_18",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055973_uwj86",
       "attributes": {
         "predicate": "invented",
         "sourceChunkIds": [
           1
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_19",
-      "source": "n_1791193177626_gfbtb",
-      "target": "n_1791193177626_ji2mv",
+      "key": "geid_225_19",
+      "source": "n_1791268055973_bfrh3",
+      "target": "n_1791268055973_2ev53",
       "attributes": {
         "predicate": "launched in",
         "sourceChunkIds": [
           1,
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.973Z"
       }
     },
     {
-      "key": "geid_239_20",
-      "source": "n_1791193177626_33uyw",
-      "target": "n_1791193177626_x053t",
+      "key": "geid_225_20",
+      "source": "n_1791268055974_o6xzg",
+      "target": "n_1791268055974_ejuyp",
       "attributes": {
         "predicate": "occurred in",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_21",
-      "source": "n_1791193177626_33uyw",
-      "target": "n_1791193177626_fx043",
+      "key": "geid_225_21",
+      "source": "n_1791268055974_o6xzg",
+      "target": "n_1791268055974_8susq",
       "attributes": {
         "predicate": "burst in",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_22",
-      "source": "n_1791193177626_mhebq",
-      "target": "n_1791193177626_g4dy3",
+      "key": "geid_225_22",
+      "source": "n_1791268055974_aufhi",
+      "target": "n_1791268055974_cmmnz",
       "attributes": {
         "predicate": "launched in",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_23",
-      "source": "n_1791193177626_uo8uy",
-      "target": "n_1791193177626_c2y3r",
+      "key": "geid_225_23",
+      "source": "n_1791268055974_m71hh",
+      "target": "n_1791268055974_2y6kk",
       "attributes": {
         "predicate": "founded in",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_24",
-      "source": "n_1791193177626_n56fb",
-      "target": "n_1791193177626_7v0x2",
+      "key": "geid_225_24",
+      "source": "n_1791268055974_qk73j",
+      "target": "n_1791268055974_14tfz",
       "attributes": {
         "predicate": "debuted in",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_25",
-      "source": "n_1791193177626_yl4ni",
-      "target": "n_1791193177626_sc33w",
+      "key": "geid_225_25",
+      "source": "n_1791268055974_dsm8h",
+      "target": "n_1791268055974_0ylf1",
       "attributes": {
         "predicate": "replaced",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_26",
-      "source": "n_1791193177626_yx51c",
-      "target": "n_1791193177626_629gg",
+      "key": "geid_225_26",
+      "source": "n_1791268055974_60ets",
+      "target": "n_1791268055974_yizs3",
       "attributes": {
         "predicate": "redefined",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.626Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_27",
-      "source": "n_1791193177627_ov29t",
-      "target": "n_1791193177626_629gg",
+      "key": "geid_225_27",
+      "source": "n_1791268055974_0jvv8",
+      "target": "n_1791268055974_yizs3",
       "attributes": {
         "predicate": "redefined",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_28",
-      "source": "n_1791193177627_fhtfk",
-      "target": "n_1791193177626_629gg",
+      "key": "geid_225_28",
+      "source": "n_1791268055974_86sjo",
+      "target": "n_1791268055974_yizs3",
       "attributes": {
         "predicate": "redefined",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.974Z"
       }
     },
     {
-      "key": "geid_239_29",
-      "source": "n_1791193177627_n1jp2",
-      "target": "n_1791193177627_a1usn",
+      "key": "geid_225_29",
+      "source": "n_1791268055975_y7i1a",
+      "target": "n_1791268055975_gpbhw",
       "attributes": {
         "predicate": "distilled",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_30",
-      "source": "n_1791193177627_wc0ra",
-      "target": "n_1791193177627_2l1cc",
+      "key": "geid_225_30",
+      "source": "n_1791268055975_6rw18",
+      "target": "n_1791268055975_xlvyg",
       "attributes": {
         "predicate": "changed",
         "sourceChunkIds": [
           2
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_31",
-      "source": "n_1791193177627_u2ad8",
-      "target": "n_1791193177627_az1i5",
+      "key": "geid_225_31",
+      "source": "n_1791268055975_epv5n",
+      "target": "n_1791268055975_9tegj",
       "attributes": {
         "predicate": "allows renting of",
         "sourceChunkIds": [
           3
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_32",
-      "source": "n_1791193177627_86o5g",
-      "target": "n_1791193177627_gtoij",
+      "key": "geid_225_32",
+      "source": "n_1791268055975_6mlor",
+      "target": "n_1791268055975_jve3a",
       "attributes": {
         "predicate": "is trained on",
         "sourceChunkIds": [
           3
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_33",
-      "source": "n_1791193177627_8vatt",
-      "target": "n_1791193177625_4ip8y",
+      "key": "geid_225_33",
+      "source": "n_1791268055975_zrlxe",
+      "target": "n_1791268055972_nxnz5",
       "attributes": {
         "predicate": "are core ideas of",
         "sourceChunkIds": [
           3
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_34",
-      "source": "n_1791193177625_sen5l",
-      "target": "n_1791193177625_4ip8y",
+      "key": "geid_225_34",
+      "source": "n_1791268055972_fvhsp",
+      "target": "n_1791268055972_nxnz5",
       "attributes": {
         "predicate": "are core ideas of",
         "sourceChunkIds": [
           3
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_239_35",
-      "source": "n_1791193177627_qpvgz",
-      "target": "n_1791193177625_4ip8y",
+      "key": "geid_225_35",
+      "source": "n_1791268055975_4ki34",
+      "target": "n_1791268055972_nxnz5",
       "attributes": {
         "predicate": "are core ideas of",
         "sourceChunkIds": [
           3
         ],
-        "addedAt": "2026-10-05T09:39:37.627Z"
+        "addedAt": "2026-10-06T06:27:35.975Z"
       }
     },
     {
-      "key": "geid_223_0",
-      "source": "n_1791212726531_3sau3",
-      "target": "n_1791212726531_bejym",
+      "key": "geid_60_0",
+      "source": "n_1791268055972_3nbsm",
+      "target": "n_1791268055973_s6u5n",
       "attributes": {
-        "predicate": "created by",
-        "sourceChunkIds": [
-          0
-        ],
-        "addedAt": "2026-10-05T15:05:26.531Z"
+        "predicate": "invented",
+        "sourceChunkIds": [],
+        "addedAt": "2026-10-06T06:44:14.503Z"
       }
     },
     {
-      "key": "geid_223_1",
-      "source": "n_1791212726531_3sau3",
-      "target": "n_1791193177626_mu4ei",
+      "key": "geid_60_1",
+      "source": "n_1791268055973_s6u5n",
+      "target": "n_1791268055973_twsy2",
       "attributes": {
-        "predicate": "released in",
-        "sourceChunkIds": [
-          0
-        ],
-        "addedAt": "2026-10-05T15:05:26.531Z"
+        "predicate": "created in",
+        "sourceChunkIds": [],
+        "addedAt": "2026-10-06T06:44:14.503Z"
       }
     },
     {
-      "key": "geid_225_0",
-      "source": "n_1791212781971_3ml2n",
-      "target": "n_1791212781971_ym5x8",
+      "key": "geid_60_2",
+      "source": "n_1791269054503_66m0d",
+      "target": "n_1791268055974_qk73j",
       "attributes": {
-        "predicate": "associated with",
-        "sourceChunkIds": [
-          0
-        ],
-        "addedAt": "2026-10-05T15:06:21.971Z"
+        "predicate": "introduced",
+        "sourceChunkIds": [],
+        "addedAt": "2026-10-06T06:44:14.503Z"
       }
     },
     {
-      "key": "geid_225_1",
-      "source": "n_1791212781972_2dcgc",
-      "target": "n_1791212781971_3ml2n",
+      "key": "geid_75_0",
+      "source": "n_1791269639639_8g7yq",
+      "target": "n_1791269639640_1malb",
       "attributes": {
-        "predicate": "powers",
+        "predicate": "completed course",
         "sourceChunkIds": [
           0
         ],
-        "addedAt": "2026-10-05T15:06:21.972Z"
+        "addedAt": "2026-10-06T06:53:59.640Z"
+      }
+    },
+    {
+      "key": "geid_75_1",
+      "source": "n_1791269639640_1malb",
+      "target": "n_1791269639642_f0oyt",
+      "attributes": {
+        "predicate": "offered by",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:53:59.642Z"
+      }
+    },
+    {
+      "key": "geid_75_2",
+      "source": "n_1791269639642_f0oyt",
+      "target": "n_1791269639643_onuyd",
+      "attributes": {
+        "predicate": "partnered with",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "geid_75_3",
+      "source": "n_1791269639643_bjb7z",
+      "target": "n_1791269639643_dgz98",
+      "attributes": {
+        "predicate": "holds role",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "geid_75_4",
+      "source": "n_1791269639643_bjb7z",
+      "target": "n_1791269639642_f0oyt",
+      "attributes": {
+        "predicate": "works for",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:53:59.643Z"
+      }
+    },
+    {
+      "key": "geid_78_0",
+      "source": "n_1791269639639_8g7yq",
+      "target": "n_1791269685285_a4v5s",
+      "attributes": {
+        "predicate": "achieved credential for",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:54:45.285Z"
+      }
+    },
+    {
+      "key": "geid_78_1",
+      "source": "n_1791269685285_a4v5s",
+      "target": "n_1791269685285_3qapp",
+      "attributes": {
+        "predicate": "provided by",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:54:45.285Z"
+      }
+    },
+    {
+      "key": "geid_78_2",
+      "source": "n_1791269685285_a4v5s",
+      "target": "n_1791269685286_e1ssd",
+      "attributes": {
+        "predicate": "in collaboration with",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:54:45.286Z"
+      }
+    },
+    {
+      "key": "geid_78_3",
+      "source": "n_1791269685286_jnz32",
+      "target": "n_1791269685285_3qapp",
+      "attributes": {
+        "predicate": "is Vice President and General Manager of",
+        "sourceChunkIds": [
+          0
+        ],
+        "addedAt": "2026-10-06T06:54:45.286Z"
       }
     }
   ]

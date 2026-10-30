@@ -179,15 +179,7 @@ export default function GraphExplorer({ onNavigate }) {
             <button
               key={t}
               onClick={() => setSelectedType(t)}
-              className={`type-badge ${selectedType === t ? "active" : ""}`}
-              style={{
-                cursor: "pointer",
-                padding: "0.35rem 0.75rem",
-                borderRadius: "999px",
-                background: selectedType === t ? "var(--accent-purple)" : "rgba(255, 255, 255, 0.05)",
-                color: selectedType === t ? "#090d16" : "var(--fg-muted)",
-                border: "1px solid var(--border-subtle)"
-              }}
+              className={`type-filter-btn ${selectedType === t ? "active" : ""}`}
             >
               {t}
             </button>

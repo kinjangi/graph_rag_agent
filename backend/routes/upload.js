@@ -12,6 +12,7 @@ import path from "path";
 import fs from "fs/promises";
 import { createRequire } from "module";
 import { chunkText } from "../utils/chunker.js";
+import { getClient, GEMINI_MODEL } from "../services/geminiClient.js";
 
 const router = express.Router();
 
@@ -51,6 +52,36 @@ const upload = multer({
 
 // ── Text extraction helpers ───────────────────────────────────────────────────
 
+async function extractTextWithGeminiVision(buffer) {
+  try {
+    const client = getClient();
+    const base64 = buffer.toString("base64");
+    const response = await client.models.generateContent({
+      model: GEMINI_MODEL,
+      contents: [
+        {
+          role: "user",
+          parts: [
+            {
+              inlineData: {
+                data: base64,
+                mimeType: "application/pdf",
+              },
+            },
+            {
+              text: "Extract all text, names, dates, credentials, institutions, and relationships verbatim from this document. Output clear readable paragraphs.",
+            },
+          ],
+        },
+      ],
+    });
+    return response?.text || "";
+  } catch (err) {
+    console.warn("[upload] Gemini vision fallback warning:", err?.message);
+    return "";
+  }
+}
+
 async function extractText(file) {
   const ext = path.extname(file.originalname).toLowerCase();
 
@@ -60,22 +91,37 @@ async function extractText(file) {
   }
 
   if (ext === ".pdf" || file.mimetype === "application/pdf") {
+    let text = "";
     try {
       if (typeof pdfParse === "function") {
         const result = await pdfParse(file.buffer);
-        return result.text;
+        text = result?.text || "";
+      } else {
+        const ParserClass = pdfParse?.PDFParse || pdfParse?.default?.PDFParse;
+        if (ParserClass) {
+          const parser = new ParserClass({ data: file.buffer });
+          const result = await parser.getText();
+          text = result?.text || "";
+        }
       }
-      const ParserClass = pdfParse?.PDFParse || pdfParse?.default?.PDFParse;
-      if (ParserClass) {
-        const parser = new ParserClass({ data: file.buffer });
-        const result = await parser.getText();
-        return result.text || "";
-      }
-      throw new Error("PDF parser class not available in pdf-parse package.");
     } catch (pdfErr) {
-      console.error("[upload] Error parsing PDF:", pdfErr);
-      throw pdfErr;
+      console.warn("[upload] Standard PDF text extraction warning:", pdfErr?.message);
     }
+
+    // Check if the extracted text is sparse, placeholder only, or from an image-based PDF
+    const meaningfulText = text.replace(/[-0-9\s_of]+/gi, "").trim();
+    if (meaningfulText.length < 50) {
+      console.log(`[upload] PDF has minimal extractable text (${meaningfulText.length} chars). Invoking Gemini Multimodal OCR...`);
+      const visionText = await extractTextWithGeminiVision(file.buffer);
+      if (visionText && visionText.trim().length > text.trim().length) {
+        text = visionText;
+      }
+    }
+
+    if (!text.trim()) {
+      throw new Error("Unable to extract text from this PDF file.");
+    }
+    return text;
   }
 
   // Fallback — should never reach here due to fileFilter, but be explicit
@@ -113,9 +159,11 @@ router.post(
 
       // ── 3. Guard against empty / whitespace-only documents ────────────
       const trimmed = rawText.trim();
-      if (!trimmed) {
+      const meaningfulLetters = trimmed.replace(/[-0-9\s_of/\\.,;:|]+/gi, "").trim();
+      if (!trimmed || meaningfulLetters.length < 10) {
         return res.status(422).json({
-          error: "The uploaded file contains no readable text.",
+          error: "The uploaded file contains insufficient readable text.",
+          detail: "Please upload a document with clear descriptive text or sentences.",
         });
       }
 

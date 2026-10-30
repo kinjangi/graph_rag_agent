@@ -48,37 +48,125 @@ no explanation, no extra keys:
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 /**
- * Strip ```json ... ``` fences that the model sometimes wraps around output
- * even when told not to, then parse JSON.
+ * Resilient JSON parser that handles:
+ * - Markdown fences
+ * - Bare arrays [ { ... } ] or objects { triples: [ ... ] }
+ * - Preceding / trailing prose or comments
+ * - Trailing commas before closing braces/brackets
  */
 function parseJsonSafely(raw) {
   if (!raw || typeof raw !== "string") return null;
 
-  // Remove markdown code fences
-  let cleaned = raw
+  let cleaned = raw.trim();
+
+  // Strip markdown code fences if present
+  cleaned = cleaned
     .replace(/^```(?:json)?\s*/i, "")
-    .replace(/\s*```\s*$/, "")
+    .replace(/\s*```\s*$/i, "")
     .trim();
 
-  // Sometimes the model wraps output in a single outer object — try to
-  // find the first '{' in case there's leading prose
-  const firstBrace = cleaned.indexOf("{");
-  if (firstBrace > 0) cleaned = cleaned.slice(firstBrace);
-
+  // Try parsing directly first
   try {
     return JSON.parse(cleaned);
-  } catch {
-    return null;
+  } catch (_) {
+    // Continue with resilient extraction
   }
+
+  // Find either outer array [ ... ] or outer object { ... }
+  const firstBracket = cleaned.indexOf("[");
+  const lastBracket = cleaned.lastIndexOf("]");
+  const firstBrace = cleaned.indexOf("{");
+  const lastBrace = cleaned.lastIndexOf("}");
+
+  let candidate = null;
+  // If array begins before object, prioritize array
+  if (firstBracket !== -1 && lastBracket > firstBracket && (firstBrace === -1 || firstBracket < firstBrace)) {
+    candidate = cleaned.slice(firstBracket, lastBracket + 1);
+  } else if (firstBrace !== -1 && lastBrace > firstBrace) {
+    candidate = cleaned.slice(firstBrace, lastBrace + 1);
+  }
+
+  if (candidate) {
+    try {
+      return JSON.parse(candidate);
+    } catch (_) {
+      // Try stripping trailing commas e.g. [ { ... }, ]
+      try {
+        const noTrailingCommas = candidate.replace(/,\s*([}\]])/g, "$1");
+        return JSON.parse(noTrailingCommas);
+      } catch (_) {}
+    }
+  }
+
+  return null;
 }
+
+/**
+ * Extracts and normalizes triples from various parsed response shapes.
+ */
+function extractTriplesList(parsed) {
+  if (!parsed) return [];
+
+  let list = [];
+  if (Array.isArray(parsed)) {
+    list = parsed;
+  } else if (Array.isArray(parsed.triples)) {
+    list = parsed.triples;
+  } else if (Array.isArray(parsed.relationships)) {
+    list = parsed.relationships;
+  } else if (Array.isArray(parsed.entities)) {
+    list = parsed.entities;
+  } else if (Array.isArray(parsed.data)) {
+    list = parsed.data;
+  } else if (Array.isArray(parsed.graph)) {
+    list = parsed.graph;
+  } else if (Array.isArray(parsed.facts)) {
+    list = parsed.facts;
+  }
+
+  return list
+    .filter((t) => t && typeof t === "object")
+    .map((t) => {
+      const subject = t.subject || t.source || t.head || t.entity1 || t.from;
+      const predicate = t.predicate || t.relation || t.relationship || t.label || t.type;
+      const object = t.object || t.target || t.tail || t.entity2 || t.to;
+      const subjectType = t.subjectType || t.sourceType || "CONCEPT";
+      const objectType = t.objectType || t.targetType || "CONCEPT";
+
+      if (
+        typeof subject === "string" && subject.trim() &&
+        typeof predicate === "string" && predicate.trim() &&
+        typeof object === "string" && object.trim()
+      ) {
+        return {
+          subject: subject.trim(),
+          predicate: predicate.trim(),
+          object: object.trim(),
+          subjectType: typeof subjectType === "string" && subjectType.trim() ? subjectType.trim() : "CONCEPT",
+          objectType: typeof objectType === "string" && objectType.trim() ? objectType.trim() : "CONCEPT",
+        };
+      }
+      return null;
+    })
+    .filter(Boolean);
+}
+
+// Candidate models in preference order for extraction
+const CANDIDATE_MODELS = [
+  GEMINI_MODEL,
+  "gemini-3.5-flash-lite",
+  "gemini-flash-lite-latest",
+  "gemini-3.1-flash-lite",
+  "gemini-3.5-flash",
+].filter((m, i, arr) => arr.indexOf(m) === i && Boolean(m));
 
 // ── Core extraction function ──────────────────────────────────────────────────
 
 /**
  * extractTriplesFromChunk(chunkText)
  *
- * Calls Gemini with the extraction prompt and returns an array of triple
- * objects. On parse failure or empty response, returns [] with a warning.
+ * Calls Gemini with the extraction prompt and returns an array of triple objects.
+ * Employs model fallback if a specific model encounters temporary high demand or rate limits.
  *
  * @param {string} chunkText  - Raw text of a single chunk.
  * @returns {Promise<Array<{subject,predicate,object,subjectType,objectType}>>}
@@ -87,51 +175,74 @@ export async function extractTriplesFromChunk(chunkText) {
   if (!chunkText || !chunkText.trim()) return [];
 
   const client = getClient();
+  let lastErr = null;
 
-  const response = await client.models.generateContent({
-    model: GEMINI_MODEL,
-    contents: [
-      {
-        role: "user",
-        parts: [
+  for (const modelName of CANDIDATE_MODELS) {
+    try {
+      const response = await client.models.generateContent({
+        model: modelName,
+        contents: [
           {
-            text: `${SYSTEM_PROMPT}\n\n---\nTEXT:\n${chunkText.trim()}\n---`,
+            role: "user",
+            parts: [
+              {
+                text: `${SYSTEM_PROMPT}\n\n---\nTEXT:\n${chunkText.trim()}\n---`,
+              },
+            ],
           },
         ],
-      },
-    ],
-    config: {
-      responseMimeType: "application/json",
-      temperature: 0.1,   // low temp → more deterministic, fewer hallucinations
-      topP: 0.9,
-    },
-  });
+        config: {
+          responseMimeType: "application/json",
+          temperature: 0.1,
+          topP: 0.9,
+        },
+      });
 
-  const rawText = response?.candidates?.[0]?.content?.parts?.[0]?.text ?? "";
+      const rawText = response?.text || response?.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
-  if (!rawText.trim()) {
-    console.warn("[extractTriples] Gemini returned an empty response for chunk.");
-    return [];
+      if (!rawText.trim()) {
+        console.warn(`[extractTriples] Gemini (${modelName}) returned an empty response for chunk.`);
+        continue;
+      }
+
+      const parsed = parseJsonSafely(rawText);
+      const valid = extractTriplesList(parsed);
+
+      if (valid.length > 0) {
+        return valid;
+      }
+
+      console.warn(
+        `[extractTriples] Model (${modelName}) produced no valid triples. Raw output:\n`,
+        rawText.slice(0, 300)
+      );
+    } catch (err) {
+      lastErr = err;
+      const status = err?.status || err?.statusCode || "";
+      const msg = (err?.message || "").toLowerCase();
+      const isRecoverable =
+        status === 404 ||
+        status === 429 ||
+        status === 503 ||
+        msg.includes("503") ||
+        msg.includes("429") ||
+        msg.includes("high demand") ||
+        msg.includes("exhausted") ||
+        msg.includes("quota") ||
+        msg.includes("unavailable");
+
+      if (isRecoverable) {
+        console.warn(`[extractTriples] Model ${modelName} transient issue (${status || msg.slice(0, 50)}). Trying fallback model...`);
+        continue;
+      }
+      throw err;
+    }
   }
 
-  const parsed = parseJsonSafely(rawText);
-
-  if (!parsed || !Array.isArray(parsed.triples)) {
-    console.warn(
-      "[extractTriples] Could not parse triples from model response. Raw output:\n",
-      rawText.slice(0, 400)
-    );
-    return [];
+  if (lastErr) {
+    throw lastErr;
   }
 
-  // Validate each triple has the required keys; drop malformed ones
-  const valid = parsed.triples.filter(
-    (t) =>
-      t &&
-      typeof t.subject === "string" && t.subject.trim() &&
-      typeof t.predicate === "string" && t.predicate.trim() &&
-      typeof t.object === "string" && t.object.trim()
-  );
-
-  return valid;
+  return [];
 }
+
